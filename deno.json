@@ -1,0 +1,9 @@
+{
+	"tasks": {
+		"days": "deno run --allow-read --allow-env main.ts",
+		"days-timed": "TIMER=true deno run --allow-read --allow-env main.ts"
+	},
+	"imports": {
+		"@std/assert": "jsr:@std/assert@1"
+	}
+}
