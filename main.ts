@@ -27,7 +27,9 @@ if (import.meta.main) {
 
 	if (Deno.args.length === 0) {
 		console.info("Running all days");
-		for (const day in days_numbers) {
+		for (const day of Object.keys(days_numbers).sort(
+			(a, b) => Number.parseInt(a) - Number.parseInt(b),
+		)) {
 			console.info(`\nRunning day ${day}`);
 			const startTime = performance.now();
 			days_numbers[day](`inputs/${day}/input.txt`);
