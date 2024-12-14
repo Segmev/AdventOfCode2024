@@ -10,6 +10,7 @@ import day09 from "./days/day09/index.ts";
 import day10 from "./days/day10/index.ts";
 import day11 from "./days/day11/index.ts";
 import day12 from "./days/day12/index.ts";
+import day13 from "./days/day13/index.ts";
 
 if (import.meta.main) {
 	const days_numbers: Record<string, (inputPath: string) => void> = {
@@ -25,6 +26,7 @@ if (import.meta.main) {
 		"10": day10,
 		"11": day11,
 		"12": day12,
+		"13": day13,
 	};
 
 	if (Deno.args.length === 0) {
