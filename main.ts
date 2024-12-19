@@ -32,13 +32,16 @@ if (import.meta.main) {
 		"13": day13,
 		"14": day14,
 		"15": day15,
+		"16": day16,
 	};
+
+	const bad_solutions = ["16"];
 
 	if (Deno.args.length === 0) {
 		console.info("Running all days");
-		for (const day of Object.keys(days_numbers).sort(
-			(a, b) => Number.parseInt(a) - Number.parseInt(b),
-		)) {
+		for (const day of Object.keys(days_numbers)
+			.sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
+			.filter((e) => !bad_solutions.includes(e))) {
 			console.info(`\nRunning day ${day}`);
 			const startTime = performance.now();
 			days_numbers[day](`inputs/${day}/input.txt`);
