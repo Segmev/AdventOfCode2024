@@ -16,6 +16,7 @@ import day15 from "./days/day15/index.ts";
 import day16 from "./days/day16/index.ts";
 import day17 from "./days/day17/index.ts";
 import day18 from "./days/day18/index.ts";
+import day19 from "./days/day19/index.ts";
 
 if (import.meta.main) {
 	const days_numbers: Record<string, (inputPath: string) => void> = {
@@ -37,6 +38,7 @@ if (import.meta.main) {
 		"16": day16,
 		"17": day17,
 		"18": day18,
+		"19": day19,
 	};
 
 	const bad_solutions = ["16"];
