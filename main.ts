@@ -18,6 +18,7 @@ import day17 from "./days/day17/index.ts";
 import day18 from "./days/day18/index.ts";
 import day19 from "./days/day19/index.ts";
 import day20 from "./days/day20/index.ts";
+import day24 from "./days/day24/index.ts";
 import day25 from "./days/day25/index.ts";
 
 if (import.meta.main) {
@@ -42,6 +43,7 @@ if (import.meta.main) {
 		"18": day18,
 		"19": day19,
 		"20": day20,
+		"24": day24,
 		"25": day25,
 	};
 
